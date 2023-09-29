@@ -28,15 +28,8 @@ def add_to_cart(
     # Use the `fruit_stand.take_fruit` module to remove fruit from inventory.
     total = 0.00
     for fruit in fruits:
-        try:
-            fruit_name, qty = fruit.split(":")
-            total += fruit_stand.take_fruit(fruit=fruit_name, qty=int(qty))
-        except ValueError as ve:
-            print(ve)
-            continue
-        except KeyError:
-            print(f"I'm sorry, we don't have {fruit_name} in stock.")
-            continue
+        fruit_name, qty = fruit.split(":")
+        total += fruit_stand.take_fruit(fruit=fruit_name, qty=int(qty))
 
     # Print the total cost of the order in USD.
     print(f"Total: ${total:.2f}") 

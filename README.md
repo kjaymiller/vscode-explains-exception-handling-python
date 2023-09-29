@@ -1,5 +1,8 @@
 # Exception Handling in Python - (VS Code Explains Episode 2)
 
+>**Note**
+> You are on the starting point branch of the video. This is expected to not run. If you want to see the solution, visit the [solution branch](../../tree/solution/).
+
 ## Why handle exceptions?
 
 Exceptions are errors that occur during the execution of a program. They disrupt the normal flow of the program and usually end it abruptly. Exceptions are a common occurrence in programming and should be handled to prevent the program from crashing.
